@@ -1,0 +1,50 @@
+.wrapper {
+    width: 100%;
+    background-color: #c9c9c9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    min-height: 70px;
+
+}
+
+.nameBlock {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.commentBlock {
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.body {
+    margin: 5px;
+}
+.body span {
+    font-size: 16px;
+    font-weight: 300;
+}

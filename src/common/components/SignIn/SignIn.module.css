@@ -1,10 +1,44 @@
-import React from 'react';
-
-export const SignIn = () => {
-    return (
-        <div className={s.wrapper}>
-
-        </div>
-    );
-};
-
+.wrapper {
+    max-width: 50%;
+    width: 400px;
+    max-height: 60%;
+    height: 400px;
+    background-color: #c9c9c9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-size: 24px;
+    text-align: center;
+}
+.formContainer {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.input {
+    max-width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: #eeeeee;
+    scale: 1.05;
+}

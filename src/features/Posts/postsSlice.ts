@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {RootState} from "../app/store";
+import {RootState} from "../../app/store";
 
 export type PostType = {
     id: number
@@ -7,17 +7,21 @@ export type PostType = {
     body: string
     userId: number
 }
-export type PostsState = PostType[]
-const initialState: PostsState = [] as PostsState
+export type PostsState = {
+    posts: PostType[]
+}
+const initialState: PostsState = {
+    posts: [] as PostType[],
+}
 const postsSlice = createSlice({
     name: 'posts',
     initialState,
     reducers: {
         fetchPosts: (state, action: PayloadAction<PostType[]>) => {
-            state = action.payload
+            state.posts = action.payload
         }
     }
 })
 export const {fetchPosts} = postsSlice.actions
-export const selectPosts = (state: RootState) => state.posts
+export const selectPosts = (state: RootState) => state.posts.posts
 export const postsReducer = postsSlice.reducer

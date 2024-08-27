@@ -1,9 +1,10 @@
-import React from 'react';
-
-export const PostsContainer = () => {
-    return (
-        <div>
-
-        </div>
-    );
-};
+.wrapper {
+    width: 80%;
+    height: 80vh;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
