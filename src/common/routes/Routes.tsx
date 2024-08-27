@@ -1,11 +1,11 @@
-import {createBrowserRouter} from "react-router-dom";
+import {createBrowserRouter, createHashRouter} from "react-router-dom";
 import App from "../../app/App";
 import {SignIn} from "../components/SignIn/SignIn";
 import {PostsContainer} from "../../features/Posts/PostsContainer";
 import {User} from "../../features/Users/User/User";
 import {CommentsContainer} from "../../features/Comments/CommentsContainer";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/',
         element: <App/>,
